@@ -41,33 +41,6 @@ fi
 
 
 ## =============================
-## ===  CUSTOM REPOSITORIES  ===
-## =============================
-#sudo add-apt-repository -y ppa:numix/ppa # No!
-sudo add-apt-repository -y ppa:twodopeshaggy/drive
-sudo apt-get update
-
-
-## ==============
-## ===  BASH  ===
-## ==============
-# Put a pretty theme to bash's prompt
-echo '' >> ~/.bashrc
-echo '# Custom prompt (Brazil color scheme) (@possatti)' >> ~/.bashrc
-echo 'export PS1="\[\e[32m\]\u\[\e[m\] at \[\e[33m\]\h\[\e[m\] in \[\e[34m\]\w\[\e[m\] \\$ "' >> ~/.bashrc
-
-
-## ====================
-## ===  FISH SHELL  ===
-## ====================
-# Install Fish
-sudo apt-get -y install fish
-
-# Make the default shell
-chsh -s /usr/bin/fish
-
-
-## =============================
 ## ===  FIX BACKLIGHT ISSUE  ===
 ## =============================
 # Put 'acpi_osi=Linux acpi_backlight=vendor' into the GRUB_CMDLINE_LINUX variable and update grub
@@ -77,67 +50,19 @@ sudo chmod o-w /etc/default/grub
 sudo update-grub
 
 
-## =============
-## ===  GIT  ===
-## =============
-# Install git
-sudo apt-get -y install git
-
-# Get user name and e-mail
-git config --global user.name "Lucas Possatti"
-git config --global user.email "lucas_possatti@hotmail.com"
-
-# Git aliases
-git config --global alias.s 'status --short --branch'
-git config --global alias.d 'diff'
-git config --global alias.dc 'diff --cached'
-git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
-git config --global alias.l '!git lg'
-git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
-
-
-## ======================
-## ===  GOOGLE DRIVE  ===
-## ======================
-# Install go (lang) for the google drive command
-sudo apt-get -y install golang
-
-# Install Drive (didn't test this one yet, hope this works)
-sudo apt-get -y install drive
-
-
 ## ============================================
 ## ===  LINK CLOUD DIRECTORIES (FROM MEGA)  ===
 ## ============================================
 # Install MEGA (this is manual, I hope you've done it already)
 
 # Link Directories
-#rm -r ~/Music
-#ln -s MEGAsync/Music Music
-#rm -r ~/Pictures
-#ln -s MEGAsync/Pictures Pictures
-#rm -r ~/Videos
-#ln -s MEGAsync/Videos Videos
+rm -r ~/Music
+ln -s MEGAsync/Music Music
+rm -r ~/Pictures
+ln -s MEGAsync/Pictures Pictures
+rm -r ~/Videos
+ln -s MEGAsync/Videos Videos
 ln -s MEGAsync/bin bin
-
-
-## ================
-## ===  PYTHON  ===
-## ================
-# Install and upgrade pip
-sudo apt-get -y install python-pip
-pip install --upgrade pip # (sudo?)
-
-# Install virtualenv
-sudo pip install virtualenv
-
-# Install virtualenv wrapper
-sudo pip install virtualenvwrapper
-echo '' >> ~/.bashrc
-echo '# virtualenvwrapper (@possatti)' >> ~/.bashrc
-echo 'export WORKON_HOME=$HOME/.virtualenvs' >> ~/.bashrc
-echo 'export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc
-echo 'source /usr/local/bin/virtualenvwrapper_lazy.sh' >> ~/.bashrc
 
 
 ## ========================
