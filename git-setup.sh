@@ -12,6 +12,9 @@ sudo apt-get -y install git
 git config --global user.name "Lucas Possatti"
 git config --global user.email "lucas_possatti@hotmail.com"
 
+# Adopt the new behavior for push.default
+git config --global push.default simple
+
 # Git aliases
 git config --global alias.s 'status --short --branch'
 git config --global alias.d 'diff'
