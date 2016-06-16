@@ -68,15 +68,7 @@ ln -s MEGAsync/bin bin
 ## ========================
 ## ===  OTHER SOFTWARE  ===
 ## ========================
-# Install Transmission
-sudo apt-get -y install transmission
 # Install Guake (remember to configure it)
 sudo apt-get -y install guake
 # Install htop
 sudo apt-get -y install htop
-
-
-## =============================================
-## ===  MANUAL STUFF TO DO AFTER THE SCRIPT  ===
-## =============================================
-## - Configure Transmission's "turtle" (xD)
