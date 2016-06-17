@@ -24,16 +24,6 @@ fi
 # 5. Change Wallpaper. :D
 
 
-## =============================
-## ===  FIX BACKLIGHT ISSUE  ===
-## =============================
-# Put 'acpi_osi=Linux acpi_backlight=vendor' into the GRUB_CMDLINE_LINUX variable and update grub
-sudo chmod o+w /etc/default/grub
-cat /etc/default/grub | sed -r 's/GRUB_CMDLINE_LINUX="(.*)"/GRUB_CMDLINE_LINUX="\1 acpi_osi=Linux acpi_backlight=vendor"/' > /etc/default/grub
-sudo chmod o-w /etc/default/grub
-sudo update-grub
-
-
 ## ============================================
 ## ===  LINK CLOUD DIRECTORIES (FROM MEGA)  ===
 ## ============================================
