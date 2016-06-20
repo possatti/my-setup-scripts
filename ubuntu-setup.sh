@@ -46,3 +46,5 @@ ln -s MEGAsync/bin bin
 sudo apt-get -y install guake
 # Install htop
 sudo apt-get -y install htop
+# Install tree
+sudo apt-get -y install tree
