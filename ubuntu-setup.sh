@@ -48,3 +48,5 @@ sudo apt-get -y install guake
 sudo apt-get -y install htop
 # Install tree
 sudo apt-get -y install tree
+# Install curl
+sudo apt-get -y install curl
