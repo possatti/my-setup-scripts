@@ -19,7 +19,7 @@ fi
 # 3. Install Sublime Text, Package Control and extensions:
 #   3.1. MoveTab
 #   3.2. EditorConfig
-#   3.2. a portuguese dictionary
+#   3.2. a portuguese dictionary (https://packagecontrol.io/packages/Dictionaries)
 # 4. Change settings in the Appearence settings
 # 5. Change Wallpaper. :D
 
