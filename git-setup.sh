@@ -15,6 +15,9 @@ git config --global user.email "lucas_possatti@hotmail.com"
 # Adopt the new behavior for push.default
 git config --global push.default simple
 
+# Use terminal to ask for username and password
+git config --global core.askpass ""
+
 # Git aliases
 git config --global alias.s 'status --short --branch'
 git config --global alias.c 'checkout'
