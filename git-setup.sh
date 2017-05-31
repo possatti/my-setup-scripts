@@ -17,6 +17,7 @@ git config --global push.default simple
 
 # Git aliases
 git config --global alias.s 'status --short --branch'
+git config --global alias.c 'checkout'
 git config --global alias.d 'diff'
 git config --global alias.dc 'diff --cached'
 git config --global alias.wd 'diff --word-diff'
