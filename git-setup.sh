@@ -28,6 +28,7 @@ git config --global alias.wdc 'diff --word-diff --cached'
 git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 git config --global alias.l '!git lg'
 git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+git config --global alias.ff 'merge --ff-only'
 
 # Ignore
 mkdir -p "$HOME/.config/git"
